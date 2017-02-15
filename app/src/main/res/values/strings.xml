@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Project one</string>
+    <string name="currently_running_process">Currently Running Process</string>
+    <string name="process_no">Process No</string>
+    <string name="priority">Priority</string>
+    <string name="o">0</string>
+    <string name="current_state">Current State</string>
+    <string name="ready_queue">Ready Queue</string>
+    <string name="block_queue">Block Queue</string>
+    <string name="process">Process</string>
+    <string name="create_process">Create Process</string>
+    <string name="context_switch">Context Switch</string>
+    <string name="terminate_process">Terminate Process</string>
+    <string name="prepopulate">Prepopulate</string>
+    <string name="time_slice_advance">Time Slice Advance</string>
+    <string name="block">Block</string>
+    <string name="context_switch2">Context Switch</string>
+    <string name="unblock">unblock</string>
+</resources>

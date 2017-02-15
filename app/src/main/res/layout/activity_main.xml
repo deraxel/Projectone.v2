@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.projectone.MainActivity">
+
+    <TextView
+        android:text="@string/currently_running_process"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/CurrentPro"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:text="@string/process_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CurrentPro"
+        android:layout_alignParentStart="true"
+        android:id="@+id/CurrentprocessNo"
+        android:textColor="#000000" />
+
+    <TextView
+        android:text="@string/priority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/CurrentprocessNo"
+        android:layout_alignTop="@id/CurrentprocessNo"
+        android:layout_toEndOf="@id/CurrentprocessNo"
+        android:textColor="#000000"
+        android:id="@+id/CurrentPriority"
+        android:layout_marginStart="20sp"/>
+
+    <TextView
+        android:text="@string/current_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/CurrentPriority"
+        android:layout_alignTop="@id/CurrentPriority"
+        android:layout_toEndOf="@id/CurrentPriority"
+        android:textColor="#000000"
+        android:id="@+id/CurrentCurrentState"
+        android:layout_marginStart="20sp"/>
+
+    <TextView
+        android:text="@string/o"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CurrentCurrentState"
+        android:textColor="#222222"
+        android:layout_alignStart="@id/CurrentprocessNo"
+        android:id="@+id/inputCurrentProcessNo"/>
+
+    <TextView
+        android:text="@string/o"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CurrentCurrentState"
+        android:textColor="#222222"
+        android:layout_alignStart="@id/CurrentPriority"
+        android:id="@+id/inputCurrentPriority"/>
+
+    <TextView
+        android:text="@string/o"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CurrentCurrentState"
+        android:textColor="#222222"
+        android:layout_alignStart="@id/CurrentCurrentState"
+        android:id="@+id/inputCurrentState"/>
+
+    <TextView
+        android:text="@string/ready_queue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputCurrentPriority"
+        android:layout_alignParentStart="true"
+        android:id="@+id/Ready_Queue"
+        android:layout_marginTop="20sp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:text="@string/process_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Ready_Queue"
+        android:layout_alignStart="@id/CurrentprocessNo"
+        android:id="@+id/ReadyprocessNo"
+        android:textColor="#000000" />
+
+    <TextView
+        android:text="@string/priority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/ReadyprocessNo"
+        android:layout_alignTop="@id/ReadyprocessNo"
+        android:layout_alignStart="@id/CurrentPriority"
+        android:textColor="#000000"
+        android:id="@+id/ReadyPriority"/>
+
+    <TextView
+        android:text="@string/current_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/ReadyPriority"
+        android:layout_alignTop="@id/ReadyPriority"
+        android:layout_alignStart="@id/CurrentCurrentState"
+        android:textColor="#000000"
+        android:id="@+id/ReadyCurrentState"/>
+
+    <TextView
+        android:text="@string/o"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minLines="1"
+        android:layout_below="@id/ReadyCurrentState"
+        android:textColor="#222222"
+        android:layout_alignStart="@id/CurrentprocessNo"
+        android:id="@+id/inputReadyProcessNo"/>
+
+    <TextView
+        android:text="@string/o"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/inputReadyProcessNo"
+        android:layout_alignBottom="@id/inputReadyProcessNo"
+        android:minLines="1"
+        android:textColor="#222222"
+        android:layout_alignStart="@id/CurrentPriority"
+        android:id="@+id/inputReadyPriority"/>
+
+    <TextView
+        android:text="@string/o"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/inputReadyProcessNo"
+        android:layout_alignBottom="@id/inputReadyProcessNo"
+        android:minLines="1"
+        android:textColor="#222222"
+        android:layout_alignStart="@id/CurrentCurrentState"
+        android:id="@+id/inputReadyState"/>
+
+    <TextView
+        android:text="@string/block_queue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputReadyPriority"
+        android:layout_alignParentStart="true"
+        android:id="@+id/Block_Queue"
+        android:layout_marginTop="20sp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:text="@string/process_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Block_Queue"
+        android:layout_alignStart="@id/CurrentprocessNo"
+        android:id="@+id/BlockprocessNo"
+        android:textColor="#000000" />
+
+    <TextView
+        android:text="@string/priority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/BlockprocessNo"
+        android:layout_alignTop="@id/BlockprocessNo"
+        android:layout_alignStart="@id/CurrentPriority"
+        android:textColor="#000000"
+        android:id="@+id/BlockPriority"/>
+
+    <TextView
+        android:text="@string/current_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/BlockPriority"
+        android:layout_alignTop="@id/BlockPriority"
+        android:layout_alignStart="@id/CurrentCurrentState"
+        android:textColor="#000000"
+        android:id="@+id/BlockCurrentState"/>
+
+    <TextView
+        android:text="@string/o"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minLines="1"
+        android:layout_below="@id/BlockCurrentState"
+        android:textColor="#222222"
+        android:layout_alignStart="@id/CurrentprocessNo"
+        android:id="@+id/inputBlockProcessNo"/>
+
+    <TextView
+        android:text="@string/o"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/inputBlockProcessNo"
+        android:layout_alignBottom="@id/inputBlockProcessNo"
+        android:minLines="1"
+        android:textColor="#222222"
+        android:layout_alignStart="@id/CurrentPriority"
+        android:id="@+id/inputBlockPriority"/>
+
+    <TextView
+        android:text="@string/o"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/inputBlockProcessNo"
+        android:layout_alignBottom="@id/inputBlockProcessNo"
+        android:minLines="1"
+        android:textColor="#222222"
+        android:layout_alignStart="@id/CurrentCurrentState"
+        android:id="@+id/inputBlockState"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/priority"
+        android:ems="10"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/editText"
+        android:layout_alignEnd="@+id/inputBlockState"
+        android:inputType="number" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create_process"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/inputBlockState"
+        android:onClick="CreateProcess"
+        android:id="@+id/create_process"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_slice_advance"
+        android:layout_above="@id/create_process"
+        android:layout_alignStart="@id/create_process"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/context_switch"
+        android:onClick="TimeSlice"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/terminate_process"
+        android:layout_above="@id/context_switch"
+        android:layout_alignStart="@id/create_process"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/Terminate"
+        android:onClick="Terminate"/>
+
+    <Button
+        android:text="@string/prepopulate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/inputBlockProcessNo"
+        android:id="@+id/Preopulate"
+        android:onClick="PrePopulate"/>
+
+    <RadioButton
+        android:text="@string/context_switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/ContextSwitchitem"
+        android:checked="true"
+        android:onClick="ContextItem"/>
+
+    <RadioButton
+        android:text="@string/block"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ContextSwitchitem"
+        android:layout_alignStart="@id/ContextSwitchitem"
+        android:id="@+id/blockQueueitem"
+        android:checked="false"
+        android:onClick="BlockItem"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="80sp"
+        android:text="@string/unblock"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@id/ContextSwitchitem"
+        android:layout_below="@id/blockQueueitem"
+        android:id="@+id/unblock"
+        android:onClick="unblock"/>
+
+</RelativeLayout>
